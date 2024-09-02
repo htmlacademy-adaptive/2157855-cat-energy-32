@@ -1,6 +1,7 @@
 .add-catalog {
     background-color: #f2f2f2;
 }
+
 .add-catalog__title {
     font-family: "Oswald", sans-serif;
     font-weight: 400;
@@ -13,6 +14,30 @@
     font-size: 14px;
     line-height: 18px;
     color: $base-color-text;
+    text-align: left;
+  }
+
+  .add-catalog__item::before {
+    content: "";
+    background-color:#f2f2f2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 67px;
+    height: 50px;
+    display: block;
+  } 
+
+  .add-catalog__item--lose::before {
+    background-image: url(../../icons/stack.svg#cat-back);
+    background-size: 50px 53px;
+    background-repeat: no-repeat;
+  }
+
+  .add-catalog__item--gain::before {
+    background-image: url(../../icons/stack.svg#tiger-back);
+    background-size: 67px 50px;
+    background-repeat: no-repeat;
   }
 
   .add-catalog__link {
@@ -20,26 +45,23 @@
     font-family: "Oswald", sans-serif;
     font-size: 16px;
     line-height: 16px;
+    text-align: center;
     color: #000000; 
   }
 
-  .lose__link-arrow {
-    mask-image: url(../../icons/stack.svg#arrow);
-    display: inline-block;
-    background-color:#000000;
-    mask-position: left center;
-    mask-repeat: no-repeat;
-    mask-size: 24px 12px;
+  .add-catalog__link::after {
+    content: "";
+    background-color: #f2f2f2;
+    background-image: url(../../icons/stack.svg#arrow);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 12px;
+    display: block;
   }
-  
-  .lose__link-arrow:hover {
-    mask-size: 32px 10px;
+
+  .add-catalog__link::after:is(:hover, :active, :focus)::after {
+    transform: scaleX(1.35px);
+    transform-origin: left;
   }
-  
-  .lose__link-arrow:active {
-    mask-position: left;
-    mask-repeat: no-repeat;
-    mask-size: 32px 10px;
-    opacity: 0.3;
-  }
-  
