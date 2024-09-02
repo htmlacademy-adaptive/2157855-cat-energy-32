@@ -20,3 +20,14 @@
   line-height: 20px;
   text-align: center;
 }
+
+.card-all__plus::before {
+  content: "";
+  background-image: url(../../icons/stack.svg#plus);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
