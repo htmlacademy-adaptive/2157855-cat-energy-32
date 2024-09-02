@@ -61,7 +61,3 @@
     display: block;
   }
 
-  .add-catalog__link::after:is(:hover, :active, :focus)::after {
-    transform: scaleX(1.35px);
-    transform-origin: left;
-  }
