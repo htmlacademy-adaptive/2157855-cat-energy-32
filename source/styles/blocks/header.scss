@@ -2,3 +2,19 @@
   background-color: #ffffff;
   color: #000000;
 }
+
+.header__image:hover {
+  opacity: 80%;
+}
+
+.header__image:active {
+  opacity: 60%;
+}
+
+.header__logo-text:hover {
+  opacity: 80%;
+}
+
+.header__logo-text:active {
+  opacity: 60%;
+}
