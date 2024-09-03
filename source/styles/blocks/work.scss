@@ -18,29 +18,29 @@
   background-size: contain;
   width: 60px;
   height: 60px;
-  display: block; 
+  display: block;
 }
 
 .work__item--leaf::before {
-  background-image: url(../../icons/stack.svg#icon-leaf);
+  background-image: url("../../icons/stack.svg#icon-leaf");
   background-size: 30px 32px;
   background-repeat: no-repeat;
 }
 
 .work__item--botle::before {
-  background-image: url(../../icons/stack.svg#icon-botle);
+  background-image: url("../../icons/stack.svg#icon-botle");
   background-size: 25px 28px;
   background-repeat: no-repeat;
 }
 
 .work__item--eat::before {
-  background-image: url(../../icons/stack.svg#icon-eat);
+  background-image: url("../../icons/stack.svg#icon-eat");
   background-size: 25px 30px;
   background-repeat: no-repeat;
 }
 
 .work__item--time::before {
-  background-image: url(../../icons/stack.svg#icon-time);
+  background-image: url("../../icons/stack.svg#icon-time");
   background-size: 26px 31px;
   background-repeat: no-repeat;
 }

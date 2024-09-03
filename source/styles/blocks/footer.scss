@@ -17,11 +17,10 @@
 .footer__copyright::after {
   content: "";
   background-position: center center;
-  background-image: url(../../icons/stack.svg#htmlacademy);
+  background-image: url("../../icons/stack.svg#htmlacademy");
   background-repeat: no-repeat;
   background-size: contain;
   width: 27px;
   height: 34px;
   display: block;
-
 }
