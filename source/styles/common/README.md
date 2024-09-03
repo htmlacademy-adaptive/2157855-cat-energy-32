@@ -27,7 +27,6 @@ img {
   object-fit: contain;
 }
 
-
 body {
   margin: 0;
 }
