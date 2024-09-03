@@ -16,13 +16,15 @@
 <body class="page__body">
   <header class="header">
     <a class="header__logo" href="index.html">
-      <img class="header__image" src="#" width="33" height="38" alt="Логотип магазина Кэт энерджи">
-      <img class="header__logo-text logo-text" src="#" width="60" height="50" alt="Название магазина Кэт энерджи">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+        <img class="header__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+      </picture>
+      <img class="header__logo-text logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип с названием магазина Кэт энерджи">
     </a>
     <nav class="nav">
-      <button class="nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="nav__wrapper">
         <ul class="nav__list site-list">
           <li class="site-list__item">
@@ -250,7 +252,7 @@
             <button class="card__button button" type="button">ЗАКАЗАТЬ</button>
           </li>
           <li class="order__card card-all">
-            <button class="card-all__button" type="button">Нажать плюс</button>
+            <div class="card-all__plus"></div>
             <h3 class="card-all__title">ПОКАЗАТЬ ЕЩЕ 100500 ТОВАРОВ</h3>
             <p class="card-all__descrption">На самом деле вкусов гораздо больше!</p>
             <button class="card-all__button-show" type="button">ПОКАЗАТЬ ВСЕ</button>
@@ -344,7 +346,7 @@
       </div>
       <div class="footer__logo logo-text">
         <a class="logo-text__link" href="index.html">
-          <img src="#" width="128" height="24" alt="Название магазина Кэт энерджи">
+          <img src="images/logo-text.svg" width="128" height="24" alt="Название магазина Кэт энерджи">
         </a>
       </div>
       <div class="footer__social social">
