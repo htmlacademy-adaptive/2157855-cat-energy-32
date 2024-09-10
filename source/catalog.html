@@ -358,47 +358,53 @@
       </div>
     </section>
     <section class="email-form">
+      <div class="email-form_title">
+        <h2 class="email-form__text">Акции и новинки</h2>
+      </div>
+      <p class="email-form__description">Подпишитесь на наши новости и не<br>пропустите ни одного предложения!
+      </p>
       <form class="email-form__field" action="https://echo.htmlacademy.ru/" method="post">
-        <h2 class="email-form__title">Акции и новинки</h2>
-        <label class="email-form__label" for="email">Подпишитесь на наши новости и не<br>пропустите ни одного предложения!</label>
+        <label class="visually-hidden" for="email">Ваш e-mail</label>
         <input class="email-form__input" type="text" name="email" id="email" placeholder="KUKLACHEV@GMAIL.COM">
         <button class="email-form__button button" type="submit">ПОДПИСАТЬСЯ</button>
       </form>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__wrapper">
-      <div class="footer__address address address--grey">
-        <b class="address__title">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
-      <div class="footer__map location">
-        <picture>
-          <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x">
-          <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/location-tablet@1x.jpg 1x, images/location-tablet@2x.jpg 2x">
-          <img class="location__image" src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" width="320" height="362" alt="Локация магазина">
-        </picture>
-      </div>
-      <div class="footer__logo logo-text">
-        <a class="logo-text__link" href="index.html">
-          <img src="images/logo-text.svg" width="128" height="24" alt="Название магазина Кэт энерджи">
-        </a>
-      </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright">HTML Academy
-      </div>
+    <div class="footer__address address">
+      <b class="address__title">ПРИГЛАШАЕМ <br>К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</b>
+      <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </div>
+    <div class="footer__map location">
+      <picture>
+        <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x">
+        <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/location-tablet@1x.jpg 1x, images/location-tablet@2x.jpg 2x">
+        <img class="location__image" src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" width="320" height="362" alt="Локация магазина">
+      </picture>
+    </div>
+      <div class="footer__logo-wrapper">
+        <div class="footer__logo logo-text">
+          <a class="logo-text__link" href="index.html">
+            <img src="images/logo-text.svg" width="128" height="24" alt="Название магазина Кэт энерджи">
+          </a>
+        </div>
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в вконтакте</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы на ютубе</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в телеграме</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__link">
+          <a class="footer__copyright" href="#">HTML Academy
+          </a>
+        </div>
     </div>
   </footer>
 </body>
