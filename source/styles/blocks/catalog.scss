@@ -1,7 +1,53 @@
+
+
 .catalog__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  margin: 27px 0 41px;
+
+  @media (min-width: $tablet-width) {
+    margin: 40px 0 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 45px 0 85px;
+  }
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+    margin-inline: auto;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    gap: 65px 80px;
+  }
+}
+
+.catalog__item {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-top: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    width: unset;
+    border: none;
+  }
+}
+
+.catalog__item:last-of-type {
+  border-bottom: 1px solid #ebebeb;
 }

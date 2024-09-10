@@ -1,13 +1,224 @@
+.card {
+  padding: 20px 0 25px;
+  width: 280px;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-template-rows: repeat(3, auto);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 37px 40px;
+    width: 250px;
+    gap: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: auto auto 1fr auto;
+    width: 169px;
+    gap: 7px;
+  }
+}
+
+.card--all {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid #f2f2f2;
+    padding: 0 35px 38px;
+    margin-top: 81px;
+  }
+}
+
+.card--all::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-bottom: 24px;
+  margin-top: 3px;
+  place-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-top: 50px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+
+.card__link-image {
+  grid-row: 1 / -2;
+  place-self: center center;
+
+  @media (min-width: $tablet-width) {
+    grid-row: unset;
+  }
+}
+
+.card__image {
+  object-fit: contain;
+  object-position: center;
+  height: 100px;
+
+  @media (min-width: $tablet-width) {
+    height: 225px;
+  }
+}
+
+.card__link-title {
+  width: 90px;
+  text-decoration: none;
+  transition: opacity 0.5s;
+
+  @media (min-width: $tablet-width) {
+    width: 150px;
+    justify-self: center;
+  }
+}
+
+.card__link-title:hover {
+  opacity: 0.6;
+}
+
+.card__link-title:active {
+  opacity: 0.3;
+}
+
 .card__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #222222;
+  margin: 0;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.card__title--all {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #111111;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
+    padding-inline: 35px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .card__list {
+  margin: 0;
+  padding: 0;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    flex-grow: 1;
+  }
+}
+
+.card__item {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.card__item:last-of-type {
+  padding-bottom: 10px;
+}
+
+.card__food {
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    line-height: 20px;
+  }
+}
+
+.card__description {
+  margin: 0;
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    line-height: 20px;
+  }
+}
+
+.card__description--all {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-inline: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.card__button {
+  margin-top: 20px;
+  grid-row: -2 / -1;
+  grid-column: 1 / -1;
+  padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    grid-row: unset;
+    grid-column: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
+  }
+}
+
+.card__button--show {
+  @media (min-width: $tablet-width) {
+    margin-top: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 90px;
+  }
 }

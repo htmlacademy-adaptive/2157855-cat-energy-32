@@ -1,13 +1,48 @@
-.nav__toggle {
-  background-image: url("../../icons/stack.svg#logo-menu");
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  background-size: contain;
-  width: 24px;
-  height: 24px;
-  border: none;
+.nav {
+  display: flex;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .nav__wrapper {
-  background-color: #ffffff;
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav__item-link {
+  color: #000000;
+}
+
+
+@media (min-width: $tablet-width) {
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 437px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 473px;
+  }
 }

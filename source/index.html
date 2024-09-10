@@ -15,30 +15,34 @@
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-        <img class="header__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
-      </picture>
-      <img class="header__logo-text logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип с названием магазина Кэт энерджи">
-    </a>
+    <div class="header__wrapper">
+      <a class="header__logo" href="index.html">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <img class="header__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+        </picture>
+      </a>
+      <a class="header__logo-text" href="index.html">
+        <img src="images/logo-text.svg" width="101" height="18" alt="Логотип с названием магазина Кэт энерджи">
+      </a>
+      <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
+    </div>
     <nav class="nav">
-      <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="nav__wrapper">
-        <ul class="nav__list site-list">
-          <li class="site-list__item site-list__item--activity">
-            <a href="index.html">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--activity">
+            <a class="nav__item-link" href="index.html">
               ГЛАВНАЯ
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="catalog.html">
+          <li class="nav__item">
+            <a class="nav__item-link" href="catalog.html">
               КАТАЛОГ ПРОДУКЦИИ
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="program.html">
+          <li class="nav__item">
+            <a class="nav__item-link" href="program.html">
               ПОДБОР ПРОГРАММЫ
             </a>
           </li>
@@ -50,19 +54,15 @@
 
     <h1 class="visually-hidden">Кэт энерджи - лучшее питание для котов</h1>
     <section class="program">
-      <div class="program__wrapper">
-        <div class="program__lead">
-          <h2 class="program__title">Функциональное
-            питание для котов</h2>
-          <p class="program__slogan">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
-        </div>
-        <a class="program__button button" href="catalog.html">ПОДОБРАТЬ ПРОГРАММУ</a>
+      <h2 class="program__title">Функциональное
+        питание для котов</h2>
+      <p class="program__slogan">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
         <picture>
-          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
-          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
-          <img class="program__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка Кэт энерджи">
-        </picture>
-      </div>
+      <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+      <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
+      <img class="program__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка Кэт энерджи">
+    </picture>
+    <a class="program__button button" href="catalog.html">ПОДОБРАТЬ ПРОГРАММУ</a>
     </section>
     <section class="add-catalog">
       <h2 class="visually-hidden">Какой каталог выбрать</h2>
@@ -99,25 +99,26 @@
       </div>
     </section>
     <section class="stats">
-      <div class="stats__wrapper">
-        <h2 class="stats__title">Живой пример</h2>
-        <p class="stats__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      </div>
+      <h2 class="stats__title">Живой пример</h2>
+      <p class="stats__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <dl class="stats__list">
         <div class="stats__item">
-          <dt class="stats__example">
-            5 КГ
+          <dt class="stats__example">снижение веса
           </dt>
-          <dd class="stats__description">снижение веса</dd>
+          <dd class="stats__text">5 КГ</dd>
         </div>
         <div class="stats__item">
-          <dt class="stats__example">
-            60 ДНЕЙ
+          <dt class="stats__example">затрачено времени
           </dt>
-          <dd class="stats__description">затрачено времени</dd>
+          <dd class="stats__text">60 ДНЕЙ</dd>
+        </div>
+        <div class="stats__item-cost">
+          <dt class="stats__cost-example">
+            ЗАТРАТЫ НА ПИТАНИЕ:
+          </dt>
+          <dd class="stats__cost-text">15 000 РУБ.</dd>
         </div>
       </dl>
-      <small class="stats__cost">ЗАТРАТЫ НА ПИТАНИЕ: 15 000 РУБ.</small>
       <div class="stats__difference slider">
         <picture>
           <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
@@ -132,38 +133,40 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__wrapper">
-      <div class="footer__address address">
-        <b class="address__title">ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</b>
-        <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
-      <div class="footer__map location">
-        <picture>
-          <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x">
-          <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/location-tablet@1x.jpg 1x, images/location-tablet@2x.jpg 2x">
-          <img class="location__image" src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" width="320" height="362" alt="Локация магазина">
-        </picture>
-      </div>
-      <div class="footer__logo logo-text">
-        <a class="logo-text__link" href="index.html">
-          <img src="images/logo-text.svg" width="128" height="24" alt="Название магазина Кэт энерджи">
-        </a>
-      </div>
-      <div class="footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в вконтакте</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы на ютубе</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в телеграме</span></a>
-          </li>
-        </ul>
-      </div>
-      <a class="footer__copyright" href="#">HTML Academy
-      </a>
+    <div class="footer__address address">
+      <b class="address__title">ПРИГЛАШАЕМ <br>К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</b>
+      <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </div>
+    <div class="footer__map location">
+      <picture>
+        <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x">
+        <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/location-tablet@1x.jpg 1x, images/location-tablet@2x.jpg 2x">
+        <img class="location__image" src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" width="320" height="362" alt="Локация магазина">
+      </picture>
+    </div>
+      <div class="footer__logo-wrapper">
+        <div class="footer__logo logo-text">
+          <a class="logo-text__link" href="index.html">
+            <img src="images/logo-text.svg" width="128" height="24" alt="Название магазина Кэт энерджи">
+          </a>
+        </div>
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в вконтакте</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы на ютубе</span></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в телеграме</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__link">
+          <a class="footer__copyright" href="#">HTML Academy
+          </a>
+        </div>
     </div>
   </footer>
 </body>

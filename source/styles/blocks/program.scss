@@ -1,25 +1,106 @@
 .program {
-  background-color: #ffffff;
-}
+  background-color: $color-basic-green;
+  margin-left: -20px;
+  margin-right: -20px;
 
-.program__lead {
-  background-color: #68b738;
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    padding-top: 65px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 580px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 110px;
+  }
 }
 
 .program__title {
+  margin: auto 35px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   text-align: center;
   color: #ffffff;
+  width: 250px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    text-align: start;
+    width: 416px;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
 }
 
 .program__slogan {
+  margin: 25px 0 0;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-align: center;
   color: #ffffff;
+  width: 200px;
+  margin-left: 60px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-left: 90px;
+    text-align: start;
+    width: 285px;
+  }
+}
+
+.program__image {
+  margin-top: 29px;
+  margin-left: 20px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 143px;
+    left: 557px;
+    margin: 0;
+  }
+}
+
+.program__button {
+  width: 280px;
+  padding: 10px 0;
+  margin-top: 3px;
+  margin-left: 20px;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 400px;
+    left: 120px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 0;
+    width: 244px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 456px;
+    left: 190px;
+  }
 }

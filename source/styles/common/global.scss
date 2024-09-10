@@ -6,3 +6,23 @@ body {
   line-height: 18px;
   color: $base-color-text;
 }
+
+.page__body {
+  margin: auto 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    margin: auto 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    margin: auto 110px;
+  }
+}
