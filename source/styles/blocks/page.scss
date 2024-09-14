@@ -1,0 +1,13 @@
+.page__body {
+    min-width: 280px;
+
+     @media (min-width: $tablet-width) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 708px;
+     }
+  
+    @media (min-width: $desktop-width) {
+      width: 1220px;
+    }
+  }

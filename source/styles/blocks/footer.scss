@@ -44,14 +44,22 @@
 .footer__map {
   margin: 0 -20px;
   background-color: #f2f2f2;
+  min-width: 100%;
+  height: 362px;
 
   @media (min-width: $tablet-width) {
     margin: 0 -30px;
+    min-height: 400px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 -110px;
   }
+}
+
+.footer iframe {
+  border: none;
+  display: block;
 }
 
 .footer__logo-wrapper {

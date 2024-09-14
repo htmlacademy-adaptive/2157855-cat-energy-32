@@ -10,7 +10,7 @@
 .nav--closed .nav__toggle {
   position: absolute;
   top: 20px;
-  left: 275px;
+  right: 45px;
   z-index: 2;
   display: block;
   background-image: url("../../icons/stack.svg#logo-menu");
@@ -37,7 +37,7 @@
 .nav--opened .nav__toggle {
   position: absolute;
   top: 23px;
-  left: 282px;
+  right: 48px;
   z-index: 2;
   display: block;
   background-image: url("../../icons/stack.svg#logo_mobile_closed");
