@@ -1,15 +1,15 @@
 .program {
   @media (max-width: 767px) {
-  background-color: #ffffff;
-  padding-top: 27px;
-  max-width: 320px;
-  position: relative;
-  background-image: url("../../images/index-background-mobile@2x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 320px;
-  background-position-x: 100% 100%;
-  background-position-y: 0 0;
-  margin: auto;
+    background-color: #ffffff;
+    padding-top: 27px;
+    max-width: 320px;
+    position: relative;
+    background-image: url("../../images/index-background-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 320px;
+    background-position-x: 100% 100%;
+    background-position-y: 0 0;
+    margin: auto;
   }
 
   @media (min-width: $tablet-width) {
