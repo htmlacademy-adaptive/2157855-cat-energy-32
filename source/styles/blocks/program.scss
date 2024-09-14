@@ -1,16 +1,36 @@
 .program {
-  background-color: $color-basic-green;
-  margin-left: -20px;
-  margin-right: -20px;
+  @media (max-width: 767px) {
+  background-color: #ffffff;
+  padding-top: 27px;
+  max-width: 320px;
+  position: relative;
+  background-image: url("../../images/index-background-mobile@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 320px;
+  background-position-x: 100% 100%;
+  background-position-y: 0 0;
+  margin: auto;
+  }
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
+    background-image: none;
+    width: 768px;
     padding-top: 65px;
-    margin: 0;
+    margin: auto;
   }
 
   @media (min-width: $desktop-width) {
-    height: 580px;
+    background-image: url("../../images/index-background-desktop@2x.jpg");
+    background-position-x: 100%;
+    background-position-y: 0%;
+    background-repeat: no-repeat;
+    background-size: 720px 694px;
+    width: 1220px;
+    margin: auto;
+    min-height: 694px;
+    padding-top: 0;
+    margin-top: -100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +39,7 @@
 }
 
 .program__title {
-  margin: auto 35px;
+  margin: auto;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -43,7 +63,7 @@
 }
 
 .program__slogan {
-  margin: 25px 0 0;
+  margin: 25px auto 0;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -51,22 +71,21 @@
   text-align: center;
   color: #ffffff;
   width: 200px;
-  margin-left: 60px;
 
   @media (min-width: $tablet-width) {
     color: #000000;
     font-size: 20px;
     line-height: 20px;
     margin-top: 40px;
-    margin-left: 90px;
+    margin-left: 80px;
     text-align: start;
     width: 285px;
   }
 }
 
 .program__image {
-  margin-top: 29px;
-  margin-left: 20px;
+  margin: 29px auto 0;
+  display: block;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -84,14 +103,13 @@
 .program__button {
   width: 280px;
   padding: 10px 0;
-  margin-top: 3px;
-  margin-left: 20px;
+  margin: 3px auto 0;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 400px;
-    left: 120px;
+    left: 100px;
     font-size: 20px;
     line-height: 26px;
     padding: 14px 0;

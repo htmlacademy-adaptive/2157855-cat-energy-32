@@ -3,14 +3,14 @@
   font-size: 20px;
   line-height: 20px;
   color: #000000;
-  margin: 0 -20px;
+  margin: 0;
   padding: 0;
 }
 
 .nav--closed .nav__toggle {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  top: 13px;
+  left: 275px;
   z-index: 2;
   display: block;
   background-image: url("../../icons/stack.svg#logo-menu");
@@ -110,6 +110,10 @@
 
 .nav__item-link {
   color: #000000;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
 
 @media (max-width: $mobile-width-max) {
