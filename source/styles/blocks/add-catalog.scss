@@ -1,22 +1,27 @@
 
 .add-catalog__list {
-  margin: 0;
   padding: 20px 0;
   list-style: none;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   gap: 20px;
+  width: 280px;
+  margin: auto;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 45px;
+    width: 708px;
     gap: 30px;
+    margin: auto;
   }
 
   @media (min-width: $desktop-width) {
     padding: 82px 0 71px;
     flex-direction: row;
     gap: 80px;
+    width: 1220px;
+    margin: auto;
   }
 }
 
