@@ -9,8 +9,8 @@
 
 .nav--closed .nav__toggle {
   position: absolute;
-  top: 13px;
-  left: 275px;
+  top: 20px;
+  right: 20px;
   z-index: 2;
   display: block;
   background-image: url("../../icons/stack.svg#logo-menu");
@@ -37,7 +37,7 @@
 .nav--opened .nav__toggle {
   position: absolute;
   top: 23px;
-  right: 48px;
+  right: 20px;
   z-index: 2;
   display: block;
   background-image: url("../../icons/stack.svg#logo_mobile_closed");
@@ -111,9 +111,9 @@
 .nav__item-link {
   color: #000000;
 
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
-  }
+  // @media (min-width: $desktop-width) {
+  //   color: #ffffff;
+  // }
 }
 
 @media (max-width: $mobile-width-max) {
