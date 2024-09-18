@@ -1,8 +1,17 @@
 .more-catalog {
   padding: 10px 0 15px;
+  width: 280px;
+  margin: auto;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
     padding: 40px 0;
+    width: 708px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: auto;
   }
 }
 
@@ -20,7 +29,6 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
   color: #000000;
 }
 
@@ -36,6 +44,7 @@
   @media (min-width: $desktop-width) {
     flex-flow: row wrap;
     gap: 80px;
+    width: 1220px;
   }
 }
 
@@ -82,16 +91,18 @@
   background-size: cover;
   width: 100%;
   min-height: 290px;
-
+  background-image: url("../../images/catalog-background-mobile@2x.jpg");
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
+    background-image: url("../../images/catalog-background-tablet@2x.jpg");
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     min-height: 288px;
     flex-shrink: 1;
+    background-image: url("../../images/catalog-background-desktop@2x.png");
   }
 }
 
@@ -117,7 +128,7 @@
 .more-catalog__description::before {
   content: "";
   background-image: url("../../icons/stack.svg#icon-gift");
-  background-color: #68b738;
+  background-color: transparent;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;

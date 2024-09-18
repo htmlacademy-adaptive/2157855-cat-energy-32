@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header header-catalog">
     <div class="header__wrapper">
       <a class="header__logo" href="index.html">
         <picture>
@@ -26,22 +26,22 @@
       <a class="header__logo-text" href="index.html">
         <img src="images/logo-text.svg" width="101" height="18" alt="Логотип с названием магазина Кэт энерджи">
       </a>
-      <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
     </div>
-    <nav class="nav">
+    <nav class="header__nav nav nav--closed">
+      <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="nav__wrapper">
         <ul class="nav__list">
-          <li class="nav__item nav__item--activity">
+          <li class="nav__item nav__item-catalog nav__item--activity">
             <a class="nav__item-link" href="index.html">
               ГЛАВНАЯ
             </a>
           </li>
-          <li class="nav__item nav__item--activity">
+          <li class="nav__item nav__item-catalog nav__item--activity">
             <a class="nav__item-link" href="catalog.html">
               КАТАЛОГ ПРОДУКЦИИ
             </a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item nav__item-catalog">
             <a class="nav__item-link" href="program.html">
               ПОДБОР ПРОГРАММЫ
             </a>
@@ -353,7 +353,7 @@
           </li>
         </ul>
         <div class="more-catalog__promotion">
-          <p class="more-catalog__description">Закажите все и получите чехол для<br>кота в подарок!</p>
+          <p class="more-catalog__description">Закажите все <br> и получите чехол для<br>кота в подарок!</p>
         </div>
       </div>
     </section>
@@ -361,7 +361,7 @@
       <div class="email-form_title">
         <h2 class="email-form__text">Акции и новинки</h2>
       </div>
-      <p class="email-form__description">Подпишитесь на наши новости и не<br>пропустите ни одного предложения!
+      <p class="email-form__description">Подпишитесь на наши новости и не пропустите ни одного предложения!
       </p>
       <form class="email-form__field" action="https://echo.htmlacademy.ru/" method="post">
         <label class="visually-hidden" for="email">Ваш e-mail</label>
@@ -375,13 +375,7 @@
       <b class="address__title">ПРИГЛАШАЕМ <br>К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</b>
       <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
-    <div class="footer__map location">
-      <picture>
-        <source width="1440" height="400" type="image/jpg" media="(min-width: 1440px)" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x">
-        <source width="768" height="400" type="image/jpg" media="(min-width: 768px)" srcset="images/location-tablet@1x.jpg 1x, images/location-tablet@2x.jpg 2x">
-        <img class="location__image" src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" width="320" height="362" alt="Локация магазина">
-      </picture>
-    </div>
+    <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sil!4v1725900545055!5m2!1sru!2sil" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
       <div class="footer__logo-wrapper">
         <div class="footer__logo logo-text">
           <a class="logo-text__link" href="index.html">

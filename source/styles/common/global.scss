@@ -5,24 +5,10 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: $base-color-text;
-}
-
-.page__body {
-  margin: auto 20px;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
-}
-
-@media (min-width: $tablet-width) {
-  .page__body {
-    margin: auto 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page__body {
-    margin: auto 110px;
-  }
 }
