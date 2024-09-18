@@ -1,8 +1,17 @@
 .more-catalog {
   padding: 10px 0 15px;
+  width: 280px;
+  margin: auto;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
     padding: 40px 0;
+    width: 708px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: auto;
   }
 }
 
@@ -20,7 +29,6 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
   color: #000000;
 }
 
@@ -36,6 +44,7 @@
   @media (min-width: $desktop-width) {
     flex-flow: row wrap;
     gap: 80px;
+    width: 1220px;
   }
 }
 

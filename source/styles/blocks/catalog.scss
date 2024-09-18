@@ -1,19 +1,23 @@
-
-
 .catalog__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  margin: 27px 0 41px;
+  padding: 27px 0 41px;
+  width: 280px;
+  margin: auto;
 
   @media (min-width: $tablet-width) {
-    margin: 40px 0 85px;
+    padding: 40px 0 85px;
+    width: 708px;
+    margin: auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 45px 0 85px;
+    padding: 45px 0 85px;
+    width: 1220px;
+    margin: auto;
   }
 }
 
