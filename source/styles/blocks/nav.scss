@@ -111,13 +111,20 @@
 .nav__item-link {
   color: #000000;
 
-  // @media (min-width: $desktop-width) {
-  //   color: #ffffff;
-  // }
+  @media (min-width: $desktop-width) and (max-width: 1600px) {
+    color: #ffffff;
+  }
 }
 
 @media (max-width: $mobile-width-max) {
   .nav--closed .nav__list {
     display: none;
+  }
+}
+
+
+.nav__item-catalog .nav__item-link {
+  @media (min-width: $desktop-width) {
+    color: #000000;
   }
 }

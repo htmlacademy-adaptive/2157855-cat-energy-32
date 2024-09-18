@@ -16,15 +16,33 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin-top: 55px auto 0;
+    background-color: transparent;
   }
 }
+
 
 .header__wrapper {
   display: flex;
   align-items: center;
   margin: 13px 0 15px;
   padding: 0;
+}
+
+.header__wrapper::before {
+  @media (min-width: $desktop-width) and (max-width: 1600px) {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 720px;
+    height: 694px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    top: 0;
+    right: 0;
+    background-image: url("../../images/index-background-desktop@2x.jpg");
+    margin: 0;
+  }
 }
 
 .header__logo {
@@ -76,4 +94,10 @@
 
 .header__logo-text:active {
   opacity: 60%;
+}
+
+.header-catalog .header__wrapper::before {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
