@@ -1,5 +1,112 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-color: #ffffff;
+  width: 320px;
+  margin: auto;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    min-height: 50px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    background-color: transparent;
+  }
+}
+
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  margin: 13px 0 15px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 25px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 55px 0 0;
+  }
+}
+
+.header__wrapper::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 720px;
+    height: 694px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    top: 0;
+    right: 0;
+    background-image: url("../../images/index-background-desktop@2x.jpg");
+    margin: 0 -110px;
+  }
+}
+
+.header__logo {
+  width: 33px;
+  height: 38px;
+  margin: 0 56px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    height: 50px;
+    width: 60px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 59px;
+    margin: 0 14px 0 0;
+  }
+}
+
+.header__image:hover {
+  opacity: 80%;
+}
+
+.header__image:active {
+  opacity: 60%;
+}
+
+
+.header__logo-text {
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    margin-left: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+    margin: 0;
+  }
+}
+
+.header__logo-text:hover {
+  opacity: 80%;
+}
+
+.header__logo-text:active {
+  opacity: 60%;
+}
+
+.header-catalog .header__wrapper::before {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

@@ -1,7 +1,29 @@
 /* GLOBAL */
 @import "./common/variables.scss";
 @import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
+/* BLOCK INDEX */
+
+@import "./blocks/button.scss";
 @import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/program.scss";
+@import "./blocks/add-catalog.scss";
+@import "./blocks/work.scss";
+@import "./blocks/stats.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/address.scss";
+@import "./blocks/social.scss";
+
+/* BLOCK CATALOG */
+@import "./blocks/catalog.scss";
+@import "./blocks/card.scss";
+@import "./blocks/more-catalog.scss";
+@import "./blocks/more-card.scss";
+@import "./blocks/email-form.scss";
