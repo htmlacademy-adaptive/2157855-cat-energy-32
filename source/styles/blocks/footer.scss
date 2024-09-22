@@ -17,9 +17,9 @@
 
 .footer__address {
   display: flex;
-  padding: 26px 20px;
   margin: auto;
-  width: 320px;
+  width: 280px;
+  padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -34,6 +34,12 @@
     position: absolute;
     margin-top: 95px;
     margin-left: 110px;
+  }
+}
+
+.footer-catalog .footer__address {
+  @media (max-width: $tablet-width-max) {
+    background-color: #f2f2f2;
   }
 }
 
@@ -88,14 +94,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     padding: 55px 30px;
     margin: auto;
     width: 708px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 0;
+    padding: 68px 0;
     margin: auto;
     width: 1220px;
   }
@@ -104,23 +109,41 @@
 .footer__logo {
   margin: 0 20px;
   background-color: #f2f2f2;
-  padding: 40px 0 20px;
+  padding: 40px 0 16px;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    margin: 0;
+    margin-right: 160px;
+    margin-left: 0;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 416px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .footer__social {
   padding: 0 20px;
-  margin: 0;
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 120px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 0;
   }
 }
@@ -137,15 +160,28 @@
     padding: 0;
     width: 132px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 376px;
+  }
 }
 
 .footer__link {
   margin: 0;
-  padding: 20px 20px 40px;
+  padding: 19px 20px 40px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     width: 168px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -156,6 +192,10 @@
   font-size: 16px;
   line-height: 20px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 5px;
+  }
 }
 
 .footer__copyright::after {

@@ -1,4 +1,6 @@
 .program {
+  position: relative;
+
   @media (max-width: 767px) {
     width: 320px;
     margin: auto;
@@ -13,15 +15,12 @@
   @media (min-width: $desktop-width) {
     width: 1440px;
     min-height: 580px;
+    margin: auto;
+    padding: 0;
   }
 }
 
-
-.program__wrapper {
-  position: relative;
-}
-
-.program__wrapper::before {
+.program::before {
   content: "";
   position: absolute;
   top: 0;
@@ -40,6 +39,7 @@
 
 
 .program__title {
+  margin: 0;
   padding-top: 27px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -56,12 +56,13 @@
     width: 416px;
     margin-left: 120px;
     margin-top: 65px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 416px;
-    margin-left: 190px;
-    margin-top: 65px;
+    margin: 0;
+    padding: 110px 0 0 190px;
   }
 }
 
@@ -91,17 +92,19 @@
 
 .program__image {
   margin: 29px auto 0;
+  padding-left: 20px;
   display: block;
-  padding: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
     margin: 21px auto 0;
+    padding-left: 30px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 143px;
-    left: 557px;
+    top: 29px;
+    left: 540px;
     margin: 0;
     z-index: -1;
   }
@@ -110,12 +113,12 @@
 .program__button {
   width: 280px;
   padding: 10px 0;
-  margin: 3px auto 0;
+  margin: auto;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 390px;
+    top: 230px;
     left: 120px;
     font-size: 20px;
     line-height: 26px;

@@ -1,5 +1,5 @@
 .card {
-  padding: 20px 0 25px;
+  padding: 19px 0 26px;
   width: 280px;
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -16,7 +16,7 @@
   @media (min-width: $desktop-width) {
     grid-template-rows: auto auto 1fr auto;
     width: 169px;
-    gap: 7px;
+    gap: 0;
   }
 }
 
@@ -49,11 +49,11 @@
     width: 60px;
     height: 60px;
     margin-top: 50px;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 37px;
   }
 }
 
@@ -114,7 +114,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 10px;
+    margin-top: 2px;
   }
 }
 
@@ -124,20 +124,26 @@
   line-height: 20px;
   text-align: center;
   color: #111111;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
     padding-inline: 35px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    width: 134px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
 .card__list {
   margin: 0;
-  padding: 0;
+  padding-bottom: 4px;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
@@ -146,6 +152,10 @@
     font-size: 16px;
     line-height: 18px;
     flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 21px;
   }
 }
 
@@ -159,9 +169,6 @@
   }
 }
 
-.card__item:last-of-type {
-  padding-bottom: 10px;
-}
 
 .card__food {
   text-align: left;
@@ -181,21 +188,26 @@
 }
 
 .card__description--all {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 12px;
+  line-height: 16px;
   text-align: center;
+  margin-top: 8px;
 
   @media (min-width: $tablet-width) {
     padding-inline: 35px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    margin-top: 6px;
   }
 }
 
 .card__button {
-  margin-top: 20px;
+  margin-top: 17px;
   grid-row: -2 / -1;
   grid-column: 1 / -1;
   padding: 10px 0;
@@ -209,16 +221,31 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 25px;
+    margin-top: 32px;
   }
 }
 
 .card__button--show {
+  background-color: #f2f2f2;
+  color: #444444;
+  margin-top: 21px;
+
   @media (min-width: $tablet-width) {
-    margin-top: 82px;
+    margin-top: 69px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 90px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: #ebebeb;
+    color: #444444;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: #222222;
   }
 }

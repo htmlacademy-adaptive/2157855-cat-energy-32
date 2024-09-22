@@ -1,6 +1,5 @@
-
 .add-catalog__list {
-  padding: 20px 0;
+  padding: 19px 0;
   list-style: none;
   display: flex;
   flex-flow: column wrap;
@@ -10,14 +9,14 @@
   margin: auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 45px;
+    padding: 0;
     width: 708px;
-    gap: 30px;
+    gap: 31px;
     margin: auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 82px 0 71px;
+    padding: 82px 0 0;
     flex-direction: row;
     gap: 80px;
     width: 1220px;
@@ -28,8 +27,8 @@
 .add-catalog__item {
   display: grid;
   grid-template-columns: 70px 1fr;
-  gap: 22px 0;
-  padding: 21px 20px;
+  gap: 23px 0;
+  padding: 23px 20px;
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
@@ -67,9 +66,11 @@
   background-image: url("../../icons/stack.svg#cat-back");
   background-size: 50px 53px;
   background-repeat: no-repeat;
+  background-position: left;
 
   @media (min-width: $tablet-width) {
     background-size: 200px 211px;
+    margin-top: 4px;
     width: 200px;
     height: 210px;
   }
@@ -87,6 +88,7 @@
   background-image: url("../../icons/stack.svg#tiger-back");
   background-size: 67px 50px;
   background-repeat: no-repeat;
+  margin-left: -7px;
 
   @media (min-width: $tablet-width) {
     background-size: 268px 200px;
@@ -114,6 +116,7 @@
   font-size: 24px;
   line-height: 37px;
   color: #000000;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -155,6 +158,7 @@
   font-size: 16px;
   line-height: 16px;
   color: #000000;
+  gap: 15px;
 
   @media (min-width: $tablet-width) {
     color: #000000;
@@ -162,6 +166,7 @@
     font-size: 20px;
     line-height: 1.5em;
     border: none;
+    padding-top: 28px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
@@ -170,7 +175,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 13px;
+    padding-top: 15px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -181,7 +194,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 24px;
-  height: 12px;
+  width: 32px;
+  height: 10px;
   display: block;
 }

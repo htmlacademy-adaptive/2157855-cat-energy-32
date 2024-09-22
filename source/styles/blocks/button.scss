@@ -10,4 +10,15 @@
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #5eaa2f;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: #ebebeb;
+  }
 }

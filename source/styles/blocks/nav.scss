@@ -9,7 +9,7 @@
 
 .nav--closed .nav__toggle {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 20px;
   z-index: 2;
   display: block;
@@ -36,7 +36,7 @@
 
 .nav--opened .nav__toggle {
   position: absolute;
-  top: 23px;
+  top: 10px;
   right: 20px;
   z-index: 2;
   display: block;
@@ -86,15 +86,22 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 33px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 33px;
+    margin: 0 auto;
+    padding-top: 39px;
+    padding-right: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+    padding-right: 1px;
   }
 }
-
 
 .nav--opened .nav__item {
   padding: 22px 0 24px;
@@ -104,6 +111,37 @@
   list-style: none;
 }
 
+
+.nav__item {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 8px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.nav__list-index .nav__item--activity {
+  @media (min-width: $tablet-width) {
+    border-bottom: solid 2px #68b738;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: solid 2px #ffffff;
+  }
+}
+
+.nav__list-catalog .nav__item--activity {
+  @media (min-width: $tablet-width) {
+    border-bottom: solid 2px #68b738;
+  }
+}
+
 .nav--opened .nav__item-link {
   color: #000000;
 }
@@ -111,8 +149,18 @@
 .nav__item-link {
   color: #000000;
 
-  @media (min-width: $desktop-width) and (max-width: 1600px) {
+  transition: opacity 0.3s ease-in-out;
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
     color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 

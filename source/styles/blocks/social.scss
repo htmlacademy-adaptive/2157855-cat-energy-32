@@ -1,5 +1,14 @@
 .social__item {
   list-style-type: none;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link::before {

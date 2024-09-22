@@ -24,13 +24,16 @@
         </picture>
       </a>
       <a class="header__logo-text" href="index.html">
-        <img src="images/logo-text.svg" width="101" height="18" alt="Логотип с названием магазина Кэт энерджи">
+        <picture>
+          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg">
+          <img src="images/logo-text.svg" width="101" height="18" alt="Логотип с названием магазина Кэт энерджи">
+        </picture>
       </a>
     </div>
     <nav class="header__nav nav nav--closed">
       <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="nav__wrapper">
-        <ul class="nav__list">
+        <ul class="nav__list nav__list-index">
           <li class="nav__item nav__item--activity">
             <a class="nav__item-link" href="index.html">
               ГЛАВНАЯ
@@ -54,17 +57,15 @@
 
     <h1 class="visually-hidden">Кэт энерджи - лучшее питание для котов</h1>
     <section class="program">
-      <div class="program__wrapper">
         <h2 class="program__title">Функциональное
           питание для котов</h2>
         <p class="program__slogan">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
-        <picture>
+        <picture class="program__image">
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
-          <img class="program__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка Кэт энерджи">
+          <img src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка Кэт энерджи">
         </picture>
         <a class="program__button button" href="catalog.html">ПОДОБРАТЬ ПРОГРАММУ</a>
-      </div>
     </section>
     <section class="add-catalog">
       <h2 class="visually-hidden">Какой каталог выбрать</h2>
@@ -84,7 +85,7 @@
     <section class="work">
         <h2 class="work__title">Как это работает</h2>
         <ul class="work__list">
-          <li class="work__item work__item--leaf">
+          <li class="work__item work__item--1 work__item--leaf">
             <p class="work__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="work__item work__item--botle">
@@ -94,7 +95,7 @@
             <p class="work__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="work__item work__item--time">
-            <p class="work__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="work__description">Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!</p>
           </li>
         </ul>
     </section>
@@ -120,26 +121,26 @@
         </div>
       </dl>
       <div class="stats__difference slider">
-        <div class="slider__before">
+        <div class="slider__picture slider__picture--before">
           <picture>
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
-            <img class="stats__image" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Картинка толстого кота слева">
+            <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Картинка толстого кота слева">
           </picture>
         </div>
-        <div class="slider__after">
+        <div class="slider__picture slider__picture--after">
           <picture>
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
-            <img class="stats__image" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Картинка худого кота справа">
+            <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Картинка худого кота справа">
           </picture>
         </div>
-        <button class="stats__slider" type="button" aria-label="Кнопка слайдера"></button>
+        <button class="slider__button" type="button" aria-label="Кнопка слайдера"></button>
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer footer-index">
     <div class="footer__address address">
       <b class="address__title">ПРИГЛАШАЕМ <br>К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</b>
-      <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="address__text">ул. Большая Конюшенная, д. 19/8<span class="address__contacts">Санкт-Петербург</span></p>
     </div>
     <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sil!4v1725900545055!5m2!1sru!2sil" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
       <div class="footer__logo-wrapper">
@@ -162,7 +163,7 @@
           </ul>
         </div>
         <div class="footer__link">
-          <a class="footer__copyright" href="#">HTML Academy
+          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
           </a>
         </div>
     </div>

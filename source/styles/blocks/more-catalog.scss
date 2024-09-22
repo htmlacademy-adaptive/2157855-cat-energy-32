@@ -1,27 +1,60 @@
 .more-catalog {
-  padding: 10px 0 15px;
   width: 280px;
   margin: auto;
+  position: relative;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
-    padding: 40px 0;
+    padding: 40px 0 0;
     width: 708px;
     margin: auto;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin: auto;
+    margin: 68px auto;
+  }
+}
+
+
+.more-catalog::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  height: 2px;
+  margin: 0 -20px 0 0;
+  background-color: #68b738;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
+    top: 90px;
+    margin: 0 -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 6px -110px 0;
   }
 }
 
 .more-catalog__title {
-  margin-top: 14px;
-  margin-bottom: 35px;
+  margin: 25px 0 36px;
+  width: 266px;
+  padding: 0;
+  z-index: 1;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     margin-top: 35px;
     margin-bottom: 80px;
+    width: 411px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    width: 416px;
+    margin-left: -40px;
   }
 }
 
@@ -30,6 +63,18 @@
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .more-catalog__wrapper {
@@ -63,10 +108,10 @@
 
 .more-catalog__item {
   border-top: 1px solid #cdcdcd;
-  padding: 13px 0 18px;
+  padding: 12px 0 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 27px 38px;
+    padding: 25px 38px 28px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
