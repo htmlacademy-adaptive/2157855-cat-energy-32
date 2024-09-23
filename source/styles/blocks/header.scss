@@ -42,13 +42,13 @@
     content: "";
     position: absolute;
     z-index: -1;
-    width: 720px;
+    width: 1041px;
     height: 694px;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
     top: 0;
-    right: 0;
+    left: 720px;
     background-image: url("../../images/index-background-desktop@2x.jpg");
     margin: 0 -110px;
   }
