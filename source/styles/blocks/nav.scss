@@ -90,16 +90,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 33px;
-    margin: 0 auto;
-    padding-top: 39px;
-    padding-right: 4px;
+    flex-wrap: wrap;
+    gap:  10px 33px;
+    margin: 37px 0 0 94px;
+    margin-right: 4px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 72px;
-    padding-right: 1px;
+    margin: 72px 0 0 542px;
   }
 }
 
