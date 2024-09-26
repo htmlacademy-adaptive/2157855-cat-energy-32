@@ -2,7 +2,7 @@
   position: relative;
 
   @media (max-width: 767px) {
-    // width: 320px;
+    width: 320px;
     margin: auto;
     padding: 0;
   }
@@ -92,23 +92,21 @@
 }
 
 .program__image {
-  margin: 29px auto 0;
-  padding-left: 20px;
+  margin: 29px 0 0 20px;
   width: 320px;
   display: block;
 
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
     margin: 21px auto 0;
-    padding-left: 30px;
     height: 609px;
-    width: 768px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 29px;
-    left: 540px;
+    left: 557px;
     margin: 0;
     z-index: -1;
   }

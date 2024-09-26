@@ -9,7 +9,7 @@
 
 .nav--closed .nav__toggle {
   position: absolute;
-  top: 8px;
+  top: 20px;
   right: 20px;
   z-index: 2;
   display: block;
@@ -97,7 +97,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 72px 0 0 542px;
+    margin: 70px 0 0 539px;
+    gap: 10px 34px;
   }
 }
 

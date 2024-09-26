@@ -12,3 +12,14 @@ body {
 a {
   text-decoration: none;
 }
+
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
