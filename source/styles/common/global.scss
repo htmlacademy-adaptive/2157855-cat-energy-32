@@ -1,7 +1,7 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $base-color-text;
@@ -11,4 +11,15 @@ body {
 
 a {
   text-decoration: none;
+}
+
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
